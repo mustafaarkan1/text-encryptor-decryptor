@@ -1,50 +1,54 @@
-# Text Encryptor / Decryptor
+# 🔐 Text Encryptor / Decryptor
 
-تطبيق ويب بسيط يتيح للمستخدم تشفير وفك تشفير النصوص باستخدام عدة خوارزميات معروفة.
+A lightweight and beginner-friendly web application that allows users to **encrypt** and **decrypt** text using several well-known algorithms. Ideal for learning about classical and modern encryption techniques.
 
-## 🔐 الخوارزميات المدعومة
+---
 
-- **Caesar Cipher**: استبدال كل حرف بحرف يبعد عنه بمقدار ثابت.
-- **Vigenère Cipher**: استبدال كل حرف استنادًا إلى مفتاح نصي متكرر.
-- **AES Encryption**: معيار تشفير حديث ومعتمد، يستخدم مكتبة CryptoJS.
+## 🧠 Supported Algorithms
 
-## 🚀 المميزات
+- **Caesar Cipher** – Shifts each letter by a fixed number of positions.
+- **Vigenère Cipher** – Encrypts letters using a repeating keyword.
+- **AES Encryption** – Modern and secure encryption using the [CryptoJS](https://github.com/brix/crypto-js) library.
 
-- واجهة مستخدم نظيفة وسهلة الاستخدام
-- إمكانية نسخ النص المشفر/المفكوك
-- التبديل بين التشفير وفك التشفير
-- مفتوح المصدر وسهل الفهم للمبتدئين
+---
 
-## 🛠️ التقنيات المستخدمة
+## 🚀 Features
 
-- HTML, CSS, JavaScript
-- مكتبة CryptoJS (لتشفير AES)
+- Clean, intuitive user interface
+- Toggle between encryption and decryption modes
+- Copy encrypted/decrypted output with one click
+- Supports multiple encryption schemes
+- Fully open-source and educational
 
-## 📦 البدء
+---
 
-ما عليك سوى فتح ملف `index.html` في متصفحك، لا حاجة لخادم.
+## 🛠️ Technologies Used
 
-## 📄 الترخيص
+- HTML5, CSS3, JavaScript (Vanilla)
+- [CryptoJS](https://github.com/brix/crypto-js) – for AES encryption support
 
-MIT License
+---
 
-Copyright (c) 2023-2024 Mustafa Arkan - Text Encryptor/Decryptor
+## 🧪 How to Use
 
-## 🧪 كيفية الاستخدام
+1. Enter the **original text** into the input field.
+2. Select the desired **encryption algorithm** from the dropdown menu.
+3. Provide the **appropriate key**:
+   - 🔸 *Caesar Cipher*: A number (e.g., `3`)
+   - 🔸 *Vigenère Cipher*: A keyword (e.g., `"SECRET"`)
+   - 🔸 *AES*: Any secret passphrase (e.g., `"MyStrongKey123"`)
+4. Click on **"Encrypt"** or **"Decrypt"**.
+5. The result will appear in the **output box**.
+6. Click the **"Copy Result"** button to copy the output to your clipboard.
 
-1. أدخل النص الذي تريد تشفيره أو فك تشفيره في مربع "النص الأصلي".
-2. اختر الخوارزمية المناسبة من القائمة المنسدلة.
-3. أدخل مفتاح التشفير المناسب للخوارزمية المختارة:
-   - **Caesar Cipher**: رقم (مثل 3)
-   - **Vigenère Cipher**: كلمة (مثل "SECRET")
-   - **AES**: أي نص كمفتاح سري
-4. انقر على زر "تشفير" أو "فك التشفير" حسب الحاجة.
-5. ستظهر النتيجة في مربع "النتيجة".
-6. يمكنك نسخ النتيجة بالنقر على زر "نسخ النتيجة".
+---
 
-## 🌐 أفكار مستقبلية
+## 📦 Getting Started
 
-- دعم تشفير الصور أو الملفات النصية
-- إضافة وضع ليلي (Dark Mode)
-- إضافة خوارزميات أخرى مثل Base64، RSA
-- رفع النسخة إلى GitHub Pages للتجربة المباشرة
+No installation or server required.
+
+Just clone the repository and open `index.html` in any modern web browser:
+
+```bash
+git clone https://github.com/mustafaarkan1/text-encryptor-decryptor.git
+cd text-encryptor-decryptor
