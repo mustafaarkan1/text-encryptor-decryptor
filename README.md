@@ -1,125 +1,87 @@
-# 🔐 Text Encryptor / Decryptor
+# 🔐 Text Encryptor / Decryptor | تطبيق تشفير وفك تشفير النصوص
 
-A lightweight and beginner-friendly web application that allows users to **encrypt** and **decrypt** text using several well-known algorithms. Ideal for learning about classical and modern encryption techniques.
-
----
-
-## 🧠 Supported Algorithms
-
-- **Caesar Cipher** – Shifts each letter by a fixed number of positions.
-- **Vigenère Cipher** – Encrypts letters using a repeating keyword.
-- **AES Encryption** – Modern and secure encryption using the [CryptoJS](https://github.com/brix/crypto-js) library.
+A lightweight and beginner-friendly web app to **encrypt** and **decrypt** text using classical and modern algorithms. مثالي للتعلم وفهم التشفير.
 
 ---
 
-## 🚀 Features
+## 🌐 English Section
 
-- Clean, intuitive user interface
-- Toggle between encryption and decryption modes
-- Copy encrypted/decrypted output with one click
-- Supports multiple encryption schemes
-- Fully open-source and educational
+### 🧠 Supported Algorithms
 
----
+- **Caesar Cipher** – Shifts each letter by a fixed number.
+- **Vigenère Cipher** – Encrypts using a repeating keyword.
+- **AES Encryption** – Modern encryption via [CryptoJS](https://github.com/brix/crypto-js)
 
-## 🛠️ Technologies Used
+### 🚀 Features
+
+- Clean and intuitive user interface
+- Encrypt or decrypt with a single click
+- Copy result to clipboard
+- Educational and open-source
+
+### 🛠️ Technologies Used
 
 - HTML5, CSS3, JavaScript (Vanilla)
-- [CryptoJS](https://github.com/brix/crypto-js) – for AES encryption support
+- [CryptoJS](https://github.com/brix/crypto-js) – AES support
 
----
+### 🧪 How to Use
 
-## 🧪 How to Use
+1. Enter the **original text**.
+2. Select an **algorithm**.
+3. Enter a **key**:
+   - Caesar: number (e.g., `3`)
+   - Vigenère: keyword (e.g., `"SECRET"`)
+   - AES: passphrase (e.g., `"MyStrongKey123"`)
+4. Click **"Encrypt"** or **"Decrypt"**.
+5. View and copy result.
 
-1. Enter the **original text** into the input field.
-2. Select the desired **encryption algorithm** from the dropdown menu.
-3. Provide the **appropriate key**:
-   - 🔸 *Caesar Cipher*: A number (e.g., `3`)
-   - 🔸 *Vigenère Cipher*: A keyword (e.g., `"SECRET"`)
-   - 🔸 *AES*: Any secret passphrase (e.g., `"MyStrongKey123"`)
-4. Click on **"Encrypt"** or **"Decrypt"**.
-5. The result will appear in the **output box**.
-6. Click the **"Copy Result"** button to copy the output to your clipboard.
+### 📦 Getting Started
 
----
-
-## 📦 Getting Started
-
-No installation or server required.
-
-Just clone the repository and open `index.html` in any modern web browser:
+No installation needed. Just open `index.html` in your browser.
 
 ```bash
 git clone https://github.com/mustafaarkan1/text-encryptor-decryptor.git
 cd text-encryptor-decryptor
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# 🔐 تطبيق تشفير وفك تشفير النصوص
-
-تطبيق ويب بسيط وسهل الاستخدام يتيح للمستخدمين **تشفير** و**فك تشفير** النصوص باستخدام خوارزميات كلاسيكية وحديثة. مصمم ليكون تعليميًا ومفتوح المصدر.
+```
 
 ---
 
-## 🧠 الخوارزميات المدعومة
+## 🌐 القسم العربي
 
-- **شيفرة قيصر (Caesar Cipher)** – استبدال كل حرف بحرف آخر يبعد عنه بعدد ثابت.
-- **شيفرة فيجينير (Vigenère Cipher)** – تشفير الحروف باستخدام كلمة مفتاحية متكررة.
-- **تشفير AES** – تشفير حديث وآمن باستخدام مكتبة [CryptoJS](https://github.com/brix/crypto-js).
+### 🧠 الخوارزميات المدعومة
 
----
+- **شيفرة قيصر** – استبدال الحروف بإزاحة ثابتة.
+- **شيفرة فيجينير** – تشفير بكلمة مفتاحية متكررة.
+- **تشفير AES** – تشفير حديث باستخدام [CryptoJS](https://github.com/brix/crypto-js).
 
-## 🚀 الميزات
+### 🚀 الميزات
 
 - واجهة بسيطة وسهلة الاستخدام
-- التبديل بين وضعي التشفير وفك التشفير
-- إمكانية نسخ النص الناتج بنقرة واحدة
-- دعم عدة خوارزميات
-- مفتوح المصدر ومناسب للتعلم
+- التبديل بين التشفير وفك التشفير
+- نسخ النتيجة بنقرة واحدة
+- تعليمي ومفتوح المصدر
 
----
+### 🛠️ التقنيات المستخدمة
 
-## 🛠️ التقنيات المستخدمة
-
-- HTML5, CSS3, JavaScript (Vanilla)
+- HTML5، CSS3، JavaScript
 - مكتبة [CryptoJS](https://github.com/brix/crypto-js) لتشفير AES
 
----
+### 🧪 كيفية الاستخدام
 
-## 🧪 كيفية الاستخدام
-
-1. أدخل **النص الأصلي** في حقل الإدخال.
-2. اختر **الخوارزمية** التي ترغب باستخدامها من القائمة المنسدلة.
+1. أدخل **النص الأصلي**.
+2. اختر **الخوارزمية**.
 3. أدخل **المفتاح المناسب**:
-   - 🔸 *شيفرة قيصر*: رقم (مثل `3`)
-   - 🔸 *شيفرة فيجينير*: كلمة مفتاحية (مثل `"SECRET"`)
-   - 🔸 *AES*: أي عبارة سرية (مثل `"MyStrongKey123"`)
-4. اضغط على زر **"تشفير"** أو **"فك التشفير"** حسب الحاجة.
-5. سيتم عرض النتيجة في حقل **النص الناتج**.
-6. استخدم زر **"نسخ النتيجة"** لنسخها إلى الحافظة.
+   - قيصر: رقم (مثل `3`)
+   - فيجينير: كلمة (مثل `"SECRET"`)
+   - AES: عبارة سرية (مثل `"MyStrongKey123"`)
+4. اضغط **"تشفير"** أو **"فك التشفير"**.
+5. انسخ النتيجة عند الحاجة.
 
----
+### 📦 البدء
 
-## 📦 البدء السريع
-
-لا حاجة لأي خادم أو تثبيت.
-
-ما عليك سوى تنزيل المشروع وفتح ملف `index.html` في متصفح حديث:
+لا حاجة لأي تثبيت. افتح فقط ملف `index.html` في المتصفح.
 
 ```bash
 git clone https://github.com/mustafaarkan1/text-encryptor-decryptor.git
 cd text-encryptor-decryptor
+```
