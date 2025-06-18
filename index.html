@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+    Text Encryptor/Decryptor
+    
+    A simple web application for encrypting and decrypting text using various algorithms.
+    
+    @author Mustafa Arkan
+    @copyright 2023-2024 Mustafa Arkan. All rights reserved.
+    @license MIT
+-->
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryptor / Decryptor</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- إضافة مكتبة Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- إضافة شريط الأيقونات الاجتماعية -->
+        <div class="social-icons">
+            <a href="https://github.com/mustafaarkan1" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mustafa-arkan/" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/4m.u1/" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        
+        <header>
+            <h1>Text Encryptor / Decryptor</h1>
+            <p>أداة بسيطة لتشفير وفك تشفير النصوص باستخدام خوارزميات مختلفة</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <h2>النص الأصلي</h2>
+                <textarea id="input-text" placeholder="أدخل النص هنا..."></textarea>
+            </div>
+
+            <div class="controls">
+                <div class="control-group">
+                    <label for="algorithm">اختر الخوارزمية:</label>
+                    <select id="algorithm">
+                        <option value="caesar">Caesar Cipher</option>
+                        <option value="vigenere">Vigenère Cipher</option>
+                        <option value="aes">AES Encryption</option>
+                    </select>
+                </div>
+
+                <div class="control-group" id="key-container">
+                    <label for="key">مفتاح التشفير:</label>
+                    <input type="text" id="key" placeholder="أدخل المفتاح...">
+                    <small id="key-hint">للخوارزمية Caesar، أدخل رقمًا (مثل 3). للخوارزمية Vigenère، أدخل كلمة. للخوارزمية AES، أدخل أي نص.</small>
+                </div>
+
+                <div class="buttons">
+                    <button id="encrypt-btn">تشفير</button>
+                    <button id="decrypt-btn">فك التشفير</button>
+                    <button id="clear-btn">مسح</button>
+                </div>
+            </div>
+
+            <div class="output-section">
+                <h2>النتيجة</h2>
+                <textarea id="output-text" readonly></textarea>
+                <button id="copy-btn">نسخ النتيجة</button>
+                <div id="copy-notification" class="hidden">تم النسخ!</div>
+            </div>
+        </main>
+
+        <footer>
+            <p>تم تطويره بواسطة <a href="https://github.com/mustafaarkan1" target="_blank">مصطفى أركان</a></p>
+        </footer>
+    </div>
+
+    <!-- Load CryptoJS for AES encryption -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    
+    <!-- Load algorithm modules -->
+    <script src="algorithms/caesar.js"></script>
+    <script src="algorithms/vigenere.js"></script>
+    <script src="algorithms/aes.js"></script>
+    
+    <!-- Main script -->
+    <script src="script.js"></script>
+</body>
+</html>
